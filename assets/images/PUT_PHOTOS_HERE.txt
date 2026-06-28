@@ -1,0 +1,4 @@
+Drop team headshots and any custom photos here.
+Team photos: ~800x560px (3:2). Suggested filenames:
+  javier.jpg, kevin.jpg, daniel.jpg, manuel.jpg
+See README.md for how to add them into about.html.
