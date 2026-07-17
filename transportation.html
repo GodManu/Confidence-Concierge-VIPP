@@ -28,11 +28,13 @@
     <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
+    <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
     <nav class="nav-links" id="navLinks" aria-label="Main navigation">
       <a href="concierge.html">Concierge</a>
       <a href="transportation.html" class="active">Transportation</a>
       <a href="activities.html">Activities</a>
       <a href="residential.html">Residential</a>
+      <a href="travel-agents.html">Travel Agents</a>
       <a href="about.html">About</a>
       <a href="#" class="js-wa btn btn--gold" style="padding:0.65rem 1.3rem;"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.07-1.32A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.56 13.82c-.2.57-1.2 1.1-1.65 1.16-.43.07-.95.1-1.54-.1-.36-.11-.81-.26-1.4-.51-2.45-1.06-4.06-3.55-4.18-3.71-.13-.17-1-1.33-1-2.55 0-1.2.63-1.8.86-2.04.22-.24.49-.3.65-.3h.47c.15 0 .35-.05.55.43.2.49.7 1.7.77 1.83.06.12.1.27.02.43-.08.17-.12.27-.24.42-.12.14-.25.31-.36.42-.12.12-.24.25-.1.49.14.25.62 1.02 1.33 1.65.91.82 1.68 1.07 1.92 1.19.25.12.39.1.54-.07.14-.17.63-.73.8-.98.17-.25.34-.2.56-.12.23.09 1.46.69 1.71.81.25.12.42.18.48.29.06.1.06.6-.14 1.17z"/></svg> WhatsApp</a>
     </nav>
@@ -106,7 +108,7 @@
 <section class="section">
   <div class="wrap">
     <div class="media-row media-row--flip">
-      <div class="media-img" style="background-image:url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1000&q=80');" role="img" aria-label="Private vehicle interior"></div>
+      <div class="media-img" style="background-image:url('https://images.unsplash.com/photo-1735620731955-b047a7122892?auto=format&fit=crop&w=1000&q=80');" role="img" aria-label="Full-size luxury SUV"></div>
       <div>
         <span class="eyebrow">Why It Matters</span>
         <h3 class="t-h3">Reliable is a luxury.</h3>
@@ -116,6 +118,33 @@
     </div>
   </div>
 </section>
+<section class="section section--cream">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Our Fleet</span><h2 class="t-h2">Vehicles chosen with care.</h2></div>
+    <div class="fleet-grid">
+
+      <div class="fleet-card">
+        <div class="fleet-img" style="background-image:url('https://images.unsplash.com/photo-1536700503339-1e4b06520771?auto=format&amp;fit=crop&amp;w=900&amp;q=80');" role="img" aria-label="Tesla electric sedan"></div>
+        <div class="fleet-body">
+          <span class="fleet-meta">Electric Sedan &middot; Up to 3 guests</span>
+          <h4>Tesla</h4>
+          <p>Silent, immaculate and effortlessly modern. Ideal for airport arrivals, dinner reservations and moving between properties in complete comfort.</p>
+        </div>
+      </div>
+
+      <div class="fleet-card">
+        <div class="fleet-img" style="background-image:url('https://images.unsplash.com/photo-1735620731955-b047a7122892?auto=format&amp;fit=crop&amp;w=900&amp;q=80');" role="img" aria-label="Full-size luxury SUV"></div>
+        <div class="fleet-body">
+          <span class="fleet-meta">Full-Size SUV &middot; Up to 7 guests</span>
+          <h4>Expedition-Class SUV</h4>
+          <p>Room for the whole party and the luggage that comes with them. The right call for families, group arrivals and full-day excursions across Baja.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section class="cta-band" id="contact">
   <div class="wrap">
     <div class="cta-inner">
@@ -126,7 +155,7 @@
       </div>
       <div class="cta-actions">
         <a href="#" class="js-wa btn btn--gold"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.07-1.32A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.56 13.82c-.2.57-1.2 1.1-1.65 1.16-.43.07-.95.1-1.54-.1-.36-.11-.81-.26-1.4-.51-2.45-1.06-4.06-3.55-4.18-3.71-.13-.17-1-1.33-1-2.55 0-1.2.63-1.8.86-2.04.22-.24.49-.3.65-.3h.47c.15 0 .35-.05.55.43.2.49.7 1.7.77 1.83.06.12.1.27.02.43-.08.17-.12.27-.24.42-.12.14-.25.31-.36.42-.12.12-.24.25-.1.49.14.25.62 1.02 1.33 1.65.91.82 1.68 1.07 1.92 1.19.25.12.39.1.54-.07.14-.17.63-.73.8-.98.17-.25.34-.2.56-.12.23.09 1.46.69 1.71.81.25.12.42.18.48.29.06.1.06.6-.14 1.17z"/></svg> Message on WhatsApp</a>
-        <a href="mailto:hello@confidenceconcierge.com" class="btn btn--outline-dark">Send an Email</a>
+        <a href="mailto:serratoleyva@gmail.com" class="btn btn--outline-dark">Send an Email</a>
       </div>
     </div>
   </div>
@@ -150,7 +179,8 @@
         <a href="transportation.html">Transportation</a>
         <a href="activities.html">Activities</a>
         <a href="residential.html">Residential</a>
-        <a href="about.html">About</a>
+        <a href="travel-agents.html">Travel Agents</a>
+      <a href="about.html">About</a>
         <a href="#" class="js-wa">WhatsApp</a>
       </nav>
     </div>
