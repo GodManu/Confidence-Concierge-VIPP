@@ -28,11 +28,13 @@
     <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
+    <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
     <nav class="nav-links" id="navLinks" aria-label="Main navigation">
       <a href="concierge.html">Concierge</a>
       <a href="transportation.html">Transportation</a>
       <a href="activities.html">Activities</a>
       <a href="residential.html">Residential</a>
+      <a href="travel-agents.html">Travel Agents</a>
       <a href="about.html" class="active">About</a>
       <a href="#" class="js-wa btn btn--gold" style="padding:0.65rem 1.3rem;"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.07-1.32A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.56 13.82c-.2.57-1.2 1.1-1.65 1.16-.43.07-.95.1-1.54-.1-.36-.11-.81-.26-1.4-.51-2.45-1.06-4.06-3.55-4.18-3.71-.13-.17-1-1.33-1-2.55 0-1.2.63-1.8.86-2.04.22-.24.49-.3.65-.3h.47c.15 0 .35-.05.55.43.2.49.7 1.7.77 1.83.06.12.1.27.02.43-.08.17-.12.27-.24.42-.12.14-.25.31-.36.42-.12.12-.24.25-.1.49.14.25.62 1.02 1.33 1.65.91.82 1.68 1.07 1.92 1.19.25.12.39.1.54-.07.14-.17.63-.73.8-.98.17-.25.34-.2.56-.12.23.09 1.46.69 1.71.81.25.12.42.18.48.29.06.1.06.6-.14 1.17z"/></svg> WhatsApp</a>
     </nav>
@@ -44,7 +46,7 @@
   <div class="wrap page-hero-content">
     <div class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; About</div>
     <h1>Built by people<br>who live this life.</h1>
-    <p>A team with decades of combined experience in Los Cabos luxury hospitality, residential management, and lifestyle services &mdash; offering insider access no directory can replicate.</p>
+    <p>A team with decades of combined experience in Los Cabos luxury hospitality, residential management and lifestyle services &mdash; offering insider access no directory can replicate.</p>
   </div>
 </section>
 
@@ -70,42 +72,111 @@
   <div class="wrap">
     <span class="eyebrow">The Team</span>
     <h2 class="t-h2">The people behind the service.</h2>
-    <!-- To add photos: replace <div class="team-photo">...</div> with
-         <div class="team-photo"><img src="assets/images/name.jpg" alt="Name"></div>
-         Recommended size 800x560px. -->
+    <p class="t-lead" style="margin-top:0.8rem;">Select any profile to read their full background and contact them directly.</p>
+
+    <!-- FOTOS: cada tarjeta tiene un comentario indicando dónde poner la <img>.
+         Tamaño sugerido: 800x560px (3:2). Guárdalas en assets/images/ -->
     <div class="team-grid">
-      <div class="team-card">
-        <div class="team-photo"><span class="team-monogram" aria-hidden="true">JF</span></div>
-        <div class="team-body">
-          <h3>Javier Flores</h3>
-          <span class="team-role">Co-Founder &middot; Luxury Hospitality &amp; Residential</span>
-          <p class="team-bio">Born and raised in Los Cabos, Javier has witnessed &mdash; and helped shape &mdash; the region's evolution into a world-class luxury destination. He began in tourism at Los Cabos International Airport before joining JW Marriott Los Cabos, then became part of the inaugural team at Montage Los Cabos, spending nearly six years progressing from bellman to butler to Residential Concierge. He later served as Residential Coordinator and Sales Operations Manager at Ohana Realty Corp, contributing to the Twin Dolphin master plan, Montage Los Cabos, Twin Dolphin Club and Maravilla. Since 2022 he has continued refining his expertise in luxury lifestyle management, and founded Card&oacute;n Luxury Management &amp; Leisure &mdash; a concept dedicated to bespoke experiences and insider access in Los Cabos.</p>
-        </div>
-      </div>
-      <div class="team-card">
-        <div class="team-photo"><span class="team-monogram" aria-hidden="true">KD</span></div>
-        <div class="team-body">
-          <h3>Kevin Davis</h3>
-          <span class="team-role">Co-Founder &middot; Concierge Operations</span>
-          <p class="team-bio">Kevin's career in professional concierge services built a network of activity providers, restaurant partners and local contacts that most visitors spend years trying to find. His role is knowing who to call and how to call them &mdash; ensuring every request is handled by someone we've worked with personally, never pulled from a directory.</p>
-        </div>
-      </div>
-      <div class="team-card">
-        <div class="team-photo"><span class="team-monogram" aria-hidden="true">DR</span></div>
-        <div class="team-body">
-          <h3>Daniel Ruiz</h3>
-          <span class="team-role">Co-Founder &middot; Maritime &amp; Charter Operations</span>
-          <p class="team-bio">Daniel's world is the water. With deep experience in yacht charters and private boat experiences, and direct relationships with captains and operators throughout the Los Cabos marina, he handles everything from a sunset sail to a full-day sport fishing charter &mdash; with an insider's understanding of the sea.</p>
-        </div>
-      </div>
-      <div class="team-card">
-        <div class="team-photo"><span class="team-monogram" aria-hidden="true">MS</span></div>
-        <div class="team-body">
-          <h3>Manuel Serrato</h3>
-          <span class="team-role">Co-Founder &middot; Client Relations &amp; Reservations</span>
-          <p class="team-bio">Manuel manages first contact &mdash; the outreach, reservations and careful pre-coordination that ensure every experience runs smoothly. Working in sales and operations within Los Cabos hospitality and property, he brings hands-on experience in restaurant bookings, client relations and property verification, with a personal network across the yacht and hospitality industries.</p>
-        </div>
-      </div>
+      <article class="team-card founder-card" tabindex="0" role="button" aria-label="View Manuel Serrato's full profile">
+          <div class="team-photo">
+            <!-- FOTO: reemplaza la línea de abajo por:
+                 <img src="assets/images/manuel.jpg" alt="Manuel Serrato"> -->
+            <span class="team-monogram" aria-hidden="true">MS</span>
+          </div>
+          <div class="team-body">
+            <span class="founder-badge">Founder</span>
+            <h3>Manuel Serrato</h3>
+            <span class="team-role">Founder &middot; Vision &amp; Client Experience</span>
+            <p class="team-bio">The founder behind Confidence Concierge — combining ultra-luxury service standards with hands-on client relations, reservations and real-estate insight across Los Cabos.</p>
+          </div>
+          <div class="bio-full">
+            <div class="bio-head">
+              <div class="bio-avatar"><!-- <img src="assets/images/manuel.jpg" alt="Manuel Serrato"> --><span>MS</span></div>
+              <div>
+                <h3>Manuel Serrato</h3>
+                <span class="role">Founder &middot; Vision &amp; Client Experience</span>
+              </div>
+            </div>
+            <div class="bio-text"><p>Manuel is the founder of Confidence Concierge and the person behind its vision: a Los Cabos service company built on genuine relationships rather than call centres and commissions.</p><p>His approach is deliberately hands-on. Rather than confining himself to one lane, Manuel works across every part of the operation — first contact and client outreach, restaurant and yacht reservations, itinerary coordination, and the pre-contact groundwork that means a guest's arrival is anticipated rather than merely processed. If something needs doing, he does it.</p><p>He brings a working understanding of ultra-luxury concierge standards — the discretion, the anticipation, the follow-through that separates true high-touch service from a booking confirmation. That standard is what he built the company around.</p><p>Alongside this, Manuel works in sales and operations within Los Cabos hospitality and real estate, handling reservations, client relations, show-ready resale verification and developer-sale review. It gives him a rare vantage point across both the visitor and the homeowner side of the market, and a personal network spanning yacht companies, restaurants and property throughout the region.</p></div>
+            <div class="bio-contact">
+              <a class="wa" href="https://wa.me/526241181978" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.07-1.32A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.56 13.82c-.2.57-1.2 1.1-1.65 1.16-.43.07-.95.1-1.54-.1-.36-.11-.81-.26-1.4-.51-2.45-1.06-4.06-3.55-4.18-3.71-.13-.17-1-1.33-1-2.55 0-1.2.63-1.8.86-2.04.22-.24.49-.3.65-.3h.47c.15 0 .35-.05.55.43.2.49.7 1.7.77 1.83.06.12.1.27.02.43-.08.17-.12.27-.24.42-.12.14-.25.31-.36.42-.12.12-.24.25-.1.49.14.25.62 1.02 1.33 1.65.91.82 1.68 1.07 1.92 1.19.25.12.39.1.54-.07.14-.17.63-.73.8-.98.17-.25.34-.2.56-.12.23.09 1.46.69 1.71.81.25.12.42.18.48.29.06.1.06.6-.14 1.17z"/></svg> WhatsApp</a>
+              <a href="tel:+526241181978"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg> +52 624 118 1978</a>
+              <a href="mailto:serratoleyva@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg> serratoleyva@gmail.com</a>
+            </div>
+          </div>
+        </article>
+      <article class="team-card" tabindex="0" role="button" aria-label="View Javier Flores's full profile">
+          <div class="team-photo">
+            <!-- FOTO: reemplaza la línea de abajo por:
+                 <img src="assets/images/javier.jpg" alt="Javier Flores"> -->
+            <span class="team-monogram" aria-hidden="true">JF</span>
+          </div>
+          <div class="team-body">
+            
+            <h3>Javier Flores</h3>
+            <span class="team-role">Co-Founder &middot; Luxury Hospitality &amp; Residential</span>
+            <p class="team-bio">Los Cabos native with nearly six years inside Montage Los Cabos, from bellman to Residential Concierge, and a background in luxury residential sales operations.</p>
+          </div>
+          <div class="bio-full">
+            <div class="bio-head">
+              <div class="bio-avatar"><!-- <img src="assets/images/javier.jpg" alt="Javier Flores"> --><span>JF</span></div>
+              <div>
+                <h3>Javier Flores</h3>
+                <span class="role">Co-Founder &middot; Luxury Hospitality &amp; Residential</span>
+              </div>
+            </div>
+            <div class="bio-text"><p>Born and raised in Los Cabos, Javier has witnessed — and helped shape — the region's evolution into a world-class luxury destination. His career has grown alongside that transformation.</p><p>He began in tourism at Los Cabos International Airport, where a passion for service took hold early. That led him to hospitality at JW Marriott Los Cabos as a bellman, and then to the inaugural team at Montage Los Cabos, where he spent nearly six years progressing from bellman to butler and ultimately Residential Concierge — building a deep foundation in high-touch service and private client relations.</p><p>He later joined Ohana Realty de México as Residential Coordinator, and after two years was promoted to Sales Operations Manager at Ohana Realty Corp, contributing to the growth and positioning of the Twin Dolphin master plan and its components — including Montage Los Cabos, Twin Dolphin Club and the Maravilla community.</p><p>Since 2022 he has continued expanding his expertise in luxury lifestyle management and personalised service. That chapter also inspired him to create Cardón Luxury Management &amp; Leisure, a concept designed to showcase the finest luxury, style and comfort Los Cabos has to offer through bespoke experiences and insider access. Today he remains committed to elevating luxury living here by blending hospitality, real estate and lifestyle into meaningful, high-value experiences.</p></div>
+            
+          </div>
+        </article>
+      <article class="team-card" tabindex="0" role="button" aria-label="View Kevin Davis's full profile">
+          <div class="team-photo">
+            <!-- FOTO: reemplaza la línea de abajo por:
+                 <img src="assets/images/kevin.jpg" alt="Kevin Davis"> -->
+            <span class="team-monogram" aria-hidden="true">KD</span>
+          </div>
+          <div class="team-body">
+            
+            <h3>Kevin Davis</h3>
+            <span class="team-role">Co-Founder &middot; Concierge Operations</span>
+            <p class="team-bio">Professional concierge background with an established network across activities, restaurants and local operators throughout Los Cabos.</p>
+          </div>
+          <div class="bio-full">
+            <div class="bio-head">
+              <div class="bio-avatar"><!-- <img src="assets/images/kevin.jpg" alt="Kevin Davis"> --><span>KD</span></div>
+              <div>
+                <h3>Kevin Davis</h3>
+                <span class="role">Co-Founder &middot; Concierge Operations</span>
+              </div>
+            </div>
+            <div class="bio-text"><p>Kevin's career in professional concierge services built something that can't be shortcut: a network of activity providers, restaurant partners and local operators earned one good experience at a time.</p><p>At Confidence Concierge his role is knowing who to call and how to call them. When a request comes in — a table on a Saturday night, an experience that's supposedly fully booked, something arranged at short notice — it goes to someone he has worked with personally, not to a directory listing or an unknown third party.</p><p>That distinction is the difference between a request being submitted and a request being handled, and it's the foundation of how the company operates.</p></div>
+            
+          </div>
+        </article>
+      <article class="team-card" tabindex="0" role="button" aria-label="View Daniel Ruiz's full profile">
+          <div class="team-photo">
+            <!-- FOTO: reemplaza la línea de abajo por:
+                 <img src="assets/images/daniel.jpg" alt="Daniel Ruiz"> -->
+            <span class="team-monogram" aria-hidden="true">DR</span>
+          </div>
+          <div class="team-body">
+            
+            <h3>Daniel Ruiz</h3>
+            <span class="team-role">Co-Founder &middot; Maritime &amp; Charter Operations</span>
+            <p class="team-bio">Deep experience in yacht charters and boat experiences, with direct relationships among captains and operators across the marina.</p>
+          </div>
+          <div class="bio-full">
+            <div class="bio-head">
+              <div class="bio-avatar"><!-- <img src="assets/images/daniel.jpg" alt="Daniel Ruiz"> --><span>DR</span></div>
+              <div>
+                <h3>Daniel Ruiz</h3>
+                <span class="role">Co-Founder &middot; Maritime &amp; Charter Operations</span>
+              </div>
+            </div>
+            <div class="bio-text"><p>Daniel's world is the water. His experience across yacht charters and private boat experiences comes with something more valuable than a supplier list: direct, personal relationships with captains and operators throughout the Los Cabos marina.</p><p>He handles everything from a sunset sail to a full-day sport fishing charter, matching the right vessel and crew to the group, the occasion and the conditions on the day — an insider's read of the sea that no booking platform can replicate.</p><p>When plans need to change because of weather or swell, that network is what turns a cancelled day into a better alternative.</p></div>
+            
+          </div>
+        </article>
     </div>
   </div>
 </section>
@@ -121,6 +192,7 @@
     </div>
   </div>
 </section>
+
 <section class="cta-band cta-band--dark" id="contact">
   <div class="wrap">
     <div class="cta-inner">
@@ -131,11 +203,22 @@
       </div>
       <div class="cta-actions">
         <a href="#" class="js-wa btn btn--gold"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.07-1.32A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.56 13.82c-.2.57-1.2 1.1-1.65 1.16-.43.07-.95.1-1.54-.1-.36-.11-.81-.26-1.4-.51-2.45-1.06-4.06-3.55-4.18-3.71-.13-.17-1-1.33-1-2.55 0-1.2.63-1.8.86-2.04.22-.24.49-.3.65-.3h.47c.15 0 .35-.05.55.43.2.49.7 1.7.77 1.83.06.12.1.27.02.43-.08.17-.12.27-.24.42-.12.14-.25.31-.36.42-.12.12-.24.25-.1.49.14.25.62 1.02 1.33 1.65.91.82 1.68 1.07 1.92 1.19.25.12.39.1.54-.07.14-.17.63-.73.8-.98.17-.25.34-.2.56-.12.23.09 1.46.69 1.71.81.25.12.42.18.48.29.06.1.06.6-.14 1.17z"/></svg> Message on WhatsApp</a>
-        <a href="mailto:hello@confidenceconcierge.com" class="btn btn--outline-light">Send an Email</a>
+        <a href="mailto:serratoleyva@gmail.com" class="btn btn--outline-light">Send an Email</a>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Bio modal -->
+<div class="bio-modal" id="bioModal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="bio-modal-inner">
+    <button class="bio-modal-close" id="bioModalClose" aria-label="Close profile">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div id="bioModalBody"></div>
+  </div>
+</div>
+
 <footer>
   <div class="wrap">
     <div class="footer-top">
@@ -155,7 +238,8 @@
         <a href="transportation.html">Transportation</a>
         <a href="activities.html">Activities</a>
         <a href="residential.html">Residential</a>
-        <a href="about.html">About</a>
+        <a href="travel-agents.html">Travel Agents</a>
+      <a href="about.html">About</a>
         <a href="#" class="js-wa">WhatsApp</a>
       </nav>
     </div>
