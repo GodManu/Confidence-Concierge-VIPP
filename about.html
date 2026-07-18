@@ -74,13 +74,14 @@
     <h2 class="t-h2">The people behind the service.</h2>
     <p class="t-lead" style="margin-top:0.8rem;">Select any profile to read their full background and contact them directly.</p>
 
-    <!-- FOTOS: cada tarjeta tiene un comentario indicando dónde poner la <img>.
-         Tamaño sugerido: 800x560px (3:2). Guárdalas en assets/images/ -->
+    <!-- FOTOS LISTAS: solo sube los archivos a assets/images/ con estos nombres exactos:
+         manuel.jpg, javier.jpg, kevin.jpg, daniel.jpg
+         Tamaño sugerido: 800x560px (3:2). Mientras no exista el archivo, se muestra el monograma. -->
     <div class="team-grid">
       <article class="team-card founder-card" tabindex="0" role="button" aria-label="View Manuel Serrato's full profile">
           <div class="team-photo">
-      
-            <img src="assets/images/manuel.jpg" alt="Manuel Serrato">
+            <img src="assets/images/manuel.jpg" alt="Manuel Serrato" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <span class="team-monogram" aria-hidden="true">MS</span>
           </div>
           <div class="team-body">
             <span class="founder-badge">Founder</span>
@@ -90,7 +91,7 @@
           </div>
           <div class="bio-full">
             <div class="bio-head">
-              <div class="bio-avatar"><img src="assets/images/manuel.jpeg" alt="Manuel Serrato"
+              <div class="bio-avatar"><img src="assets/images/manuel.jpg" alt="Manuel Serrato" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><span>MS</span></div>
               <div>
                 <h3>Manuel Serrato</h3>
                 <span class="role">Founder &middot; Vision &amp; Client Experience</span>
@@ -106,8 +107,7 @@
         </article>
       <article class="team-card" tabindex="0" role="button" aria-label="View Javier Flores's full profile">
           <div class="team-photo">
-            <!-- FOTO: reemplaza la línea de abajo por:
-                 <img src="assets/images/javier.jpg" alt="Javier Flores"> -->
+            <img src="assets/images/javier.jpg" alt="Javier Flores" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
             <span class="team-monogram" aria-hidden="true">JF</span>
           </div>
           <div class="team-body">
@@ -118,7 +118,7 @@
           </div>
           <div class="bio-full">
             <div class="bio-head">
-              <div class="bio-avatar"><!-- <img src="assets/images/javier.jpg" alt="Javier Flores"> --><span>JF</span></div>
+              <div class="bio-avatar"><img src="assets/images/javier.jpg" alt="Javier Flores" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><span>JF</span></div>
               <div>
                 <h3>Javier Flores</h3>
                 <span class="role">Co-Founder &middot; Luxury Hospitality &amp; Residential</span>
@@ -130,8 +130,7 @@
         </article>
       <article class="team-card" tabindex="0" role="button" aria-label="View Kevin Davis's full profile">
           <div class="team-photo">
-            <!-- FOTO: reemplaza la línea de abajo por:
-                 <img src="assets/images/kevin.jpg" alt="Kevin Davis"> -->
+            <img src="assets/images/kevin.jpg" alt="Kevin Davis" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
             <span class="team-monogram" aria-hidden="true">KD</span>
           </div>
           <div class="team-body">
@@ -142,7 +141,7 @@
           </div>
           <div class="bio-full">
             <div class="bio-head">
-              <div class="bio-avatar"><!-- <img src="assets/images/kevin.jpg" alt="Kevin Davis"> --><span>KD</span></div>
+              <div class="bio-avatar"><img src="assets/images/kevin.jpg" alt="Kevin Davis" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><span>KD</span></div>
               <div>
                 <h3>Kevin Davis</h3>
                 <span class="role">Co-Founder &middot; Concierge Operations</span>
@@ -154,8 +153,7 @@
         </article>
       <article class="team-card" tabindex="0" role="button" aria-label="View Daniel Ruiz's full profile">
           <div class="team-photo">
-            <!-- FOTO: reemplaza la línea de abajo por:
-                 <img src="assets/images/daniel.jpg" alt="Daniel Ruiz"> -->
+            <img src="assets/images/daniel.jpg" alt="Daniel Ruiz" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
             <span class="team-monogram" aria-hidden="true">DR</span>
           </div>
           <div class="team-body">
@@ -166,7 +164,7 @@
           </div>
           <div class="bio-full">
             <div class="bio-head">
-              <div class="bio-avatar"><!-- <img src="assets/images/daniel.jpg" alt="Daniel Ruiz"> --><span>DR</span></div>
+              <div class="bio-avatar"><img src="assets/images/daniel.jpg" alt="Daniel Ruiz" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><span>DR</span></div>
               <div>
                 <h3>Daniel Ruiz</h3>
                 <span class="role">Co-Founder &middot; Maritime &amp; Charter Operations</span>
